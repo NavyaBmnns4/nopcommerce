@@ -29,7 +29,7 @@ public void LoginTest() throws IOException
 	//validation
 	logger.info("****Validating login ****");
 	
-	String exp_title="Dashboard / nopCommerce administration123";
+	String exp_title="Dashboard / nopCommerce administration";
 	String act_title=driver.getTitle();
 	if(exp_title.equals(act_title))
 	{
