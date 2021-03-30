@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="nopcommerce" thread-count="5" parallel="tests">
+<suite name="nopcommerce">
 	<listeners>
 	
 	<listener class-name="com.nopcommerce.utilities.ExtentReportManager"/>
