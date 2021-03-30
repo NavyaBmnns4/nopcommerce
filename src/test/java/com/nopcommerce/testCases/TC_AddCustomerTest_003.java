@@ -25,12 +25,12 @@ public class TC_AddCustomerTest_003 extends BaseClass {
   cp.ClickonCustomersmenu();
   cp.ClickonCustomersmenuitem(); 
   cp.ClickonAddnewCustomer();
-  cp.setemail("Test1@gmail.com"); 
-  cp.setpwd("Test@1235");
-  cp.setfirstname("Test2"); 
-  cp.setlastname("ABCD"); 
+  cp.setemail("Test26@gmail.com"); 
+  cp.setpwd("Test@12467");
+  cp.setfirstname("Test22"); 
+  cp.setlastname("ABCD3"); 
   cp.setgender("Female");
-  cp.setdob("04/02/1999"); 
+  cp.setdob("04/02/1990"); 
   cp.setcompanyname("Testing");
   cp.setcustomerroles("Vendors"); 
   cp.setmngerofvendor("Vendor 1");

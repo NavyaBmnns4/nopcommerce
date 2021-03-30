@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-30T14:19:34Z" name="nopcommerce" finished-at="2021-03-30T14:20:21Z" duration-ms="47199">
+  <suite started-at="2021-03-30T14:25:08Z" name="nopcommerce" finished-at="2021-03-30T14:25:42Z" duration-ms="34238">
     <groups>
     </groups>
-    <test started-at="2021-03-30T14:19:34Z" name="TC_AddCustomerTest_003" finished-at="2021-03-30T14:20:08Z" duration-ms="34169">
+    <test started-at="2021-03-30T14:25:08Z" name="TC_AddCustomerTest_003" finished-at="2021-03-30T14:25:42Z" duration-ms="34238">
       <class name="com.nopcommerce.testCases.TC_AddCustomerTest_003">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.nopcommerce.testCases.TC_AddCustomerTest_003@758c83d8]" started-at="2021-03-30T14:19:34Z" name="setup" finished-at="2021-03-30T14:19:38Z" duration-ms="3925" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.nopcommerce.testCases.TC_AddCustomerTest_003@758c83d8]" started-at="2021-03-30T14:25:08Z" name="setup" finished-at="2021-03-30T14:25:12Z" duration-ms="3542" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,38 +18,63 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addnewcust()[pri:0, instance:com.nopcommerce.testCases.TC_AddCustomerTest_003@758c83d8]" started-at="2021-03-30T14:19:38Z" name="addnewcust" finished-at="2021-03-30T14:20:07Z" duration-ms="28993" status="PASS">
+        <test-method signature="addnewcust()[pri:0, instance:com.nopcommerce.testCases.TC_AddCustomerTest_003@758c83d8]" started-at="2021-03-30T14:25:12Z" name="addnewcust" finished-at="2021-03-30T14:25:41Z" duration-ms="29464" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate an element using xpath=//div[@class='alert alert-success alert-dismissable']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-5', revision: 'b3a0d621cc'
+System info: host: 'CTSHYD52094750', ip: '10.1.2.206', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//div[@class='alert alert-success alert-dismissable']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-5', revision: 'b3a0d621cc'
+System info: host: 'CTSHYD52094750', ip: '10.1.2.206', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:336)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:451)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:394)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
+at com.nopcommerce.pageObjects.AddcustomerPage.Verifyconfirmationmsg(AddcustomerPage.java:146)
+at com.nopcommerce.testCases.TC_AddCustomerTest_003.addnewcust(TC_AddCustomerTest_003.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addnewcust -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.nopcommerce.testCases.TC_AddCustomerTest_003@758c83d8]" started-at="2021-03-30T14:20:07Z" name="teardown" finished-at="2021-03-30T14:20:08Z" duration-ms="1032" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.nopcommerce.testCases.TC_AddCustomerTest_003@758c83d8]" started-at="2021-03-30T14:25:42Z" name="teardown" finished-at="2021-03-30T14:25:42Z" duration-ms="966" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.nopcommerce.testCases.TC_AddCustomerTest_003 -->
     </test> <!-- TC_AddCustomerTest_003 -->
-    <test started-at="2021-03-30T14:20:09Z" name="TC_LoginTest_001" finished-at="2021-03-30T14:20:21Z" duration-ms="12675">
-      <class name="com.nopcommerce.testCases.TC_LoginTest_001">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.nopcommerce.testCases.TC_LoginTest_001@75f5fd58]" started-at="2021-03-30T14:20:09Z" name="setup" finished-at="2021-03-30T14:20:11Z" duration-ms="2385" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="LoginTest()[pri:0, instance:com.nopcommerce.testCases.TC_LoginTest_001@75f5fd58]" started-at="2021-03-30T14:20:11Z" name="LoginTest" finished-at="2021-03-30T14:20:20Z" duration-ms="9160" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.nopcommerce.testCases.TC_LoginTest_001@75f5fd58]" started-at="2021-03-30T14:20:20Z" name="teardown" finished-at="2021-03-30T14:20:21Z" duration-ms="1124" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.nopcommerce.testCases.TC_LoginTest_001 -->
-    </test> <!-- TC_LoginTest_001 -->
   </suite> <!-- nopcommerce -->
 </testng-results>

@@ -5,15 +5,15 @@
   <listeners>
     <listener class-name="com.nopcommerce.utilities.ExtentReportManager"/>
   </listeners>
-  <test thread-count="5" name="TC_LoginTest_001(failed)">
+  <test thread-count="5" name="TC_AddCustomerTest_003(failed)">
     <classes>
-      <class name="com.nopcommerce.testCases.TC_LoginTest_001">
+      <class name="com.nopcommerce.testCases.TC_AddCustomerTest_003">
         <methods>
           <include name="setup"/>
           <include name="teardown"/>
-          <include name="LoginTest"/>
+          <include name="addnewcust"/>
         </methods>
-      </class> <!-- com.nopcommerce.testCases.TC_LoginTest_001 -->
+      </class> <!-- com.nopcommerce.testCases.TC_AddCustomerTest_003 -->
     </classes>
-  </test> <!-- TC_LoginTest_001(failed) -->
+  </test> <!-- TC_AddCustomerTest_003(failed) -->
 </suite> <!-- Failed suite [nopcommerce] -->

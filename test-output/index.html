@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-nopcommerce" class="navigator-link">
-              <span class="suite-name border-passed">nopcommerce</span>
+              <span class="suite-name border-failed">nopcommerce</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-nopcommerce" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,26 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-nopcommerce" class="hide-methods passed suite-nopcommerce"> (hide)</a> <!-- hide-methods passed suite-nopcommerce -->
-                      <a href="#" panel-name="suite-nopcommerce" class="show-methods passed suite-nopcommerce"> (show)</a> <!-- show-methods passed suite-nopcommerce -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-nopcommerce" class="hide-methods failed suite-nopcommerce"> (hide)</a> <!-- hide-methods failed suite-nopcommerce -->
+                      <a href="#" panel-name="suite-nopcommerce" class="show-methods failed suite-nopcommerce"> (show)</a> <!-- show-methods failed suite-nopcommerce -->
                     </span>
-                    <div class="method-list-content passed suite-nopcommerce">
+                    <div class="method-list-content failed suite-nopcommerce">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-nopcommerce" title="com.nopcommerce.testCases.TC_LoginTest_001" class="method navigator-link" hash-for-method="LoginTest">LoginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-nopcommerce" title="com.nopcommerce.testCases.TC_AddCustomerTest_003" class="method navigator-link" hash-for-method="addnewcust">addnewcust</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-nopcommerce -->
+                    </div> <!-- method-list-content failed suite-nopcommerce -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,9 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-nopcommerce" class="panel nopcommerce">
-          <div class="suite-nopcommerce-class-passed">
+          <div class="suite-nopcommerce-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.nopcommerce.testCases.TC_AddCustomerTest_003</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -133,25 +128,23 @@
                   <a name="addnewcust">
                   </a> <!-- addnewcust -->
                   <span class="method-name">addnewcust</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//div[@class=&apos;alert alert-success alert-dismissable&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-alpha-5&apos;, revision: &apos;b3a0d621cc&apos;
+System info: host: &apos;CTSHYD52094750&apos;, ip: &apos;10.1.2.206&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:336)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:451)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:394)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
+	at com.nopcommerce.pageObjects.AddcustomerPage.Verifyconfirmationmsg(AddcustomerPage.java:146)
+	at com.nopcommerce.testCases.TC_AddCustomerTest_003.addnewcust(TC_AddCustomerTest_003.java:42)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-nopcommerce-class-passed -->
-          <div class="suite-nopcommerce-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.nopcommerce.testCases.TC_LoginTest_001</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="LoginTest">
-                  </a> <!-- LoginTest -->
-                  <span class="method-name">LoginTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-nopcommerce-class-passed -->
+          </div> <!-- suite-nopcommerce-class-failed -->
         </div> <!-- panel nopcommerce -->
         <div panel-name="test-xml-nopcommerce" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -171,11 +164,6 @@
       &lt;class name=&quot;com.nopcommerce.testCases.TC_AddCustomerTest_003&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TC_AddCustomerTest_003 --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;TC_LoginTest_001&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.nopcommerce.testCases.TC_LoginTest_001&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TC_LoginTest_001 --&gt;
 &lt;/suite&gt; &lt;!-- nopcommerce --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -188,9 +176,6 @@
             <ul>
               <li>
                 <span class="test-name">TC_AddCustomerTest_003 (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">TC_LoginTest_001 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -216,20 +201,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addnewcust')
 data.setCell(0, 2, 'com.nopcommerce.testCases.TC_AddCustomerTest_003')
-data.setCell(0, 3, 28993);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'LoginTest')
-data.setCell(1, 2, 'com.nopcommerce.testCases.TC_LoginTest_001')
-data.setCell(1, 3, 9160);
+data.setCell(0, 3, 29464);
 window.suiteTableData['nopcommerce']= { tableData: data, tableDiv: 'times-div-nopcommerce'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <span class="suite-total-time">Total running time: 29 seconds</span>
               <div id="times-div-nopcommerce">
               </div> <!-- times-div-nopcommerce -->
             </div> <!-- times-div -->
@@ -261,27 +242,14 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">addnewcust</span>
-                <span class="method-start">3942 ms</span>
+                <span class="method-start">3549 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">32947 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.nopcommerce.testCases.TC_LoginTest_001</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">34338 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">LoginTest</span>
-                <span class="method-start">36723 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">45886 ms</span>
+                <span class="method-start">33097 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
