@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-03-30T11:21:24Z" name="nopcommerce" finished-at="2021-03-30T11:22:10Z" duration-ms="46556">
+    <groups>
+    </groups>
+    <test started-at="2021-03-30T11:21:24Z" name="chrometest" finished-at="2021-03-30T11:22:10Z" duration-ms="46556">
+      <class name="com.nopcommerce.testCases.TC_AddCustomerTest_003">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.nopcommerce.testCases.TC_AddCustomerTest_003@f001896]" started-at="2021-03-30T11:21:24Z" name="setup" finished-at="2021-03-30T11:21:31Z" duration-ms="6738" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addnewcust()[pri:0, instance:com.nopcommerce.testCases.TC_AddCustomerTest_003@f001896]" started-at="2021-03-30T11:21:31Z" name="addnewcust" finished-at="2021-03-30T11:22:09Z" duration-ms="38539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addnewcust -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.nopcommerce.testCases.TC_AddCustomerTest_003@f001896]" started-at="2021-03-30T11:22:09Z" name="teardown" finished-at="2021-03-30T11:22:10Z" duration-ms="1074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.nopcommerce.testCases.TC_AddCustomerTest_003 -->
+    </test> <!-- chrometest -->
+  </suite> <!-- nopcommerce -->
+</testng-results>

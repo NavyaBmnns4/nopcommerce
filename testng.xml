@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="nopcommerce" thread-count="5" parallel="tests">
+	<listeners>
+	
+	<listener class-name="com.nopcommerce.utilities.ExtentReportManager"/>
+	
+	</listeners>
+	<test name="chrometest">
+	<parameter name="browser" value="chrome"/>
+		<classes>
+
+			<class name="com.nopcommerce.testCases.TC_AddCustomerTest_003" />
+			
+		</classes>
+	</test>
+	
+		<!-- <test name="firefoxtest">
+	<parameter name="browser" value="firefox"/>
+		<classes>
+			<class name="com.nopcommerce.testCases.TC_LoginTest_001" />
+		</classes>
+	</test> -->
+</suite>
