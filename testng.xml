@@ -5,17 +5,16 @@
 	<listener class-name="com.nopcommerce.utilities.ExtentReportManager"/>
 	
 	</listeners>
-	<test name="chrometest">
-	<parameter name="browser" value="chrome"/>
-		<classes>
-
-			<class name="com.nopcommerce.testCases.TC_AddCustomerTest_003" />
-			
-		</classes>
-	</test>
 	
-		<!-- <test name="firefoxtest">
-	<parameter name="browser" value="firefox"/>
+	<parameter name="browser" value="chrome"/>
+	<!--  <parameter name="browser" value="firefox"/> -->
+	<!--  <test name="TC_AddCustomerTest_003">
+		<classes>
+			<class name="com.nopcommerce.testCases.TC_AddCustomerTest_003" />
+		</classes>
+	</test> -->
+	
+		<test name="TC_LoginTest_001">
 		<classes>
 			<class name="com.nopcommerce.testCases.TC_LoginTest_001" />
 		</classes>
