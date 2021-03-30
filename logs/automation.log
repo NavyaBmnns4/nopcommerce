@@ -145,3 +145,11 @@
 [INFO ] 30-03-2021 07:44:42.836 TC_LoginTest_001 - ****Providing login details****
 [INFO ] 30-03-2021 07:44:49.201 TC_LoginTest_001 - ****Validating login ****
 [INFO ] 30-03-2021 07:44:49.209 TC_LoginTest_001 - ****Login is successful****
+[INFO ] 30-03-2021 07:49:38.715 TC_AddCustomerTest_003 - ********* starting TC_AddCustomerTest_003 *************
+[INFO ] 30-03-2021 07:49:55.195 TC_AddCustomerTest_003 - *********Adding new customer *************
+[INFO ] 30-03-2021 07:50:07.699 TC_AddCustomerTest_003 - ***************  Customer added succesfully *********** 
+[INFO ] 30-03-2021 07:50:07.700 TC_AddCustomerTest_003 - ***************   TC_AddCustomerTest_003 Finished  *********** 
+[INFO ] 30-03-2021 07:50:11.489 TC_LoginTest_001 - ****Starting this testcase****
+[INFO ] 30-03-2021 07:50:15.722 TC_LoginTest_001 - ****Providing login details****
+[INFO ] 30-03-2021 07:50:20.635 TC_LoginTest_001 - ****Validating login ****
+[INFO ] 30-03-2021 07:50:20.648 TC_LoginTest_001 - ****Login is successful****
